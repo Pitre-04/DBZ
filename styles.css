@@ -1,0 +1,135 @@
+* {
+    margin: 0; /* Elimina márgenes por defecto del navegador */
+    padding: 0; /* Elimina el relleno por defecto del navegador */
+}D
+
+body {
+    margin: 0;  /* Elimina márgenes por defecto del navegador */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen de fondo al hacer scroll */
+    font-family: "Roboto", sans-serif; /* Cambia a una fuente más moderna desde Google Fonts */
+    background-image: url("/img/fondo.jpg"); /* Aplica la imagen fondo.jpg como fondo */
+    color: #000; /* Establece el color del texto a negro */
+}
+
+main {
+    background-color: rgba(49, 39, 39, 0.8); /* Fondo oscuro con transparencia */
+    width: 99.2vw; /* Ancho relativo al viewport */
+    height: 670vh; /* Altura relativa al viewport */
+    margin: auto;
+}
+
+/* Título principal */
+.titulo {
+    padding-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #000; /* Color negro para el texto */
+}
+
+/* Contenedor de la galería */
+.galeria {
+    padding: 2em; /* Espaciado interior usando em */
+    max-width: 1200px; /* Ancho máximo de la galería */
+    min-height: 100vh; /* Altura mínima igual al viewport */
+    font-size: 1rem; /* Tamaño base de fuente */
+    margin: auto; /* Centra horizontalmente la galería */
+    display: grid; /* Cambia a diseño de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 2em; /* Espaciado entre elementos */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+}
+
+/* Tarjetas de personajes */
+.personajes {
+    border: 3px solid #a8a8a8;  /* Borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 15px; /* Espaciado interior */
+    width: 230px; /* Ancho fijo */
+    text-align: center; /* Centra el contenido */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #000; /* Texto negro */
+}
+
+/* Estilo de texto dentro de las tarjetas */
+.personajes p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    font-weight: 600; /* Grosor más pronunciado */
+    letter-spacing: 0.05em; /* Aumenta ligeramente el espacio entre letras */
+}
+
+/* Imágenes dentro de las tarjetas */
+.personajes img {
+    object-fit: contain; /* Ajusta el contenido sin recortar */
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    height: 350px; /* Altura fija */
+}
+
+/* Colores específicos para ciertas tarjetas */
+.personajes:nth-child(1) {
+    background-color: #ffefd5; /*  color amarillo pálido */
+}
+
+.personajes:nth-child(2) {
+    background-color: #ffe4e1; /* color rosa claro */
+}
+
+.personajes:nth-child(3) {
+    background-color: #d8bfd8; /*  color púrpura claro */
+}
+
+.personajes:nth-child(4) {
+    background-color: #afeeee; /*  color turquesa claro */
+}
+
+.personajes:nth-child(5) {
+    background-color: #f5deb3; /*  color trigo */
+}
+
+.personajes:nth-child(31) {
+    background-color: #98fb98; /* color verde pálido */
+}
+
+/* Gradientes */
+.personajes:nth-child(6) {
+    background: linear-gradient(to right, #ff4500, #ff6347); /* Gradiente lineal rojo */
+}
+
+.personajes:nth-child(7) {
+    background: radial-gradient(circle, #add8e6, #4682b4); /* Gradiente radial azul */
+}
+
+/* Estilos de texto avanzados */
+.personajes:nth-child(8) {
+    background-color: #fff; /* Fondo blanco */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-shadow: 1px 1px 1px #333; /* Sombra para el texto */
+}
+
+/* Estilo cursiva y negrita */
+.personajes:nth-child(9) {
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    font-style: italic; /* Texto en cursiva */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Comparación de unidades */
+.personajes:nth-child(12) {
+    font-size: 16px; /* Tamaño absoluto */
+}
+
+.personajes:nth-child(12) .comparacion {
+    font-size: 16px; /* Tamaño absoluto */
+    margin: 16px; /* Espaciado absoluto */
+}
+
+.personajes:nth-child(12) .comparacion-em {
+    font-size: 1em; /* Relativo al contenedor */
+    margin: 1em; /* Espaciado relativo */
+}
+
+.personajes:nth-child(12) .comparacion-rem {
+    font-size: 1rem; /* Relativo al documento */
+    margin: 1rem; /* Espaciado relativo */
+}
